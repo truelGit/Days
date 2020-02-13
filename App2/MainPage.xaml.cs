@@ -18,11 +18,12 @@ namespace Days
 			InitializeComponent();
 		}
 
-		void OnButtonClicked(object sender, EventArgs args)
+		async void OnButtonClicked(object sender, EventArgs args)
 		{
 			if (int.TryParse(editor.Text, out int difference))
 			{
-				label.Text = DateTime.Now.AddDays(difference).ToString("dddd, MMMM dd yyyy");
+				var endDate = DateTime.Now.AddDays(difference).ToString("dddd, MMMM dd yyyy");
+				await DisplayAlert("End", endDate, "Ok");
 			}
 		}
 	}

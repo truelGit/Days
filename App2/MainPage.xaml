@@ -15,11 +15,6 @@
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 Clicked="OnButtonClicked" />
-		<Label x:Name="label"
-               Text="Click the Button below"
-               FontSize="Large"
-               VerticalOptions="CenterAndExpand"
-               HorizontalOptions="Center" />
 	</StackLayout>
 
 </ContentPage>
